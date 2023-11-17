@@ -17,4 +17,29 @@ First, clone the repository or download the source code. Then, install the requi
 
 ```bash
 pip install Flask flask-cors
+``` 
+## Running the Service
+To run the service, execute the following command:
 
+```bash
+python app.py
+```
+
+The service will start on `localhost` at port `5000`.
+
+## Usage
+Send a POST request to the `/convert` endpoint with a JSON payload containing the weight in pounds. For example:
+
+```bash
+curl -X POST -H "Content-Type: application/json"
+-d '{"pounds": 150}'
+http://localhost:5000/convert
+```
+
+The service will return a JSON response containing the weight in kilograms:
+
+```json
+{
+  "kilograms": 68.0388555
+}
+```
