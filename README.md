@@ -43,3 +43,5 @@ The service will return a JSON response containing the weight in kilograms:
   "kilograms": 68.0388555
 }
 ```
+
+![uml_361_microservice](https://github.com/HalimUzodike/CS361_microservice/assets/98881780/da5c4397-392f-462c-ba81-71ebff18c87f)
